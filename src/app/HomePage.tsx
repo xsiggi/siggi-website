@@ -40,7 +40,7 @@ export default function HomePage() {
         </div>
       </div>
       <div className=" flex-col gap-8 container flex px-[5%] py-[10%]">
-        <p className="text-[32px] text-semibold text-stodirPrimary">
+        <p className="text-[24px] text-semibold text-stodirPrimary pb-[6%]">
           Stoðir fjárfesta í traustum fyrirtækjum með skýra stefnu og sterkan
           rekstrargrunn, með áherslu á langtímavaxtarmöguleika.
         </p>
@@ -86,6 +86,20 @@ export default function HomePage() {
         <div className="flex-row gap-6 container flex px-[5%] py-[10%]">
           <div className="flex w-full items-center justify-start py-[8%] flex-col bg-stodirSecondary rounded-lg">
             <p className="text-[24px] font-semibold text-stodirBackground">
+              Fjárfestingareignir
+            </p>
+            <p className="text-[74px] font-semibold text-stodirBackground">
+              55
+            </p>
+          </div>
+          <div className="flex w-full items-center justify-start py-[8%] flex-col bg-stodirSecondary rounded-lg">
+            <p className="text-[24px] font-semibold text-stodirBackground">
+              Lykilfjárfestingar
+            </p>
+            <p className="text-[74px] font-semibold text-stodirBackground">8</p>
+          </div>
+          <div className="flex w-full items-center justify-start pt-[8%] flex-col bg-stodirSecondary rounded-lg">
+            <p className="text-[24px] font-semibold text-stodirBackground">
               Stofnár
             </p>
             <p className="text-[74px] font-semibold text-stodirBackground">
@@ -94,57 +108,13 @@ export default function HomePage() {
           </div>
           <div className="flex w-full items-center justify-start pt-[8%] flex-col bg-stodirSecondary rounded-lg">
             <p className="text-[24px] font-semibold text-stodirBackground">
-              Rekstrarreynsla
+              Starfsmenn
             </p>
-            <p className="text-[74px] font-semibold text-stodirBackground">
-              30+
-            </p>
-            <p className="text-[24px] font-semibold text-stodirBackground">
-              ár
-            </p>
-          </div>
-          <div className="flex w-full items-center justify-start pt-[8%] flex-col bg-stodirSecondary rounded-lg">
-            <p className="text-[24px] font-semibold text-stodirBackground">
-              Fjárfest í
-            </p>
-            <p className="text-[74px] font-semibold text-stodirBackground">
-              20+
-            </p>
-            <p className="text-[24px] font-semibold text-stodirBackground">
-              fyrirtækjum
-            </p>
-          </div>
-          <div className="flex w-full items-center justify-start pt-[8%] flex-col bg-stodirSecondary rounded-lg">
-            <p className="text-[24px] font-semibold text-stodirBackground">
-              Heildarfjárfestingarvirði
-            </p>
-            <p className="text-[74px] font-semibold text-stodirBackground">
-              150
-            </p>
-            <p className="text-[24px] font-semibold text-stodirBackground">
-              ma.kr.
-            </p>
+            <p className="text-[74px] font-semibold text-stodirBackground">8</p>
           </div>
         </div>
       </div>
-      <div className="bg-stodirPrimary">
-        <div className="flex-row items-center justify-center gap-8 container flex px-[5%] py-[10%]">
-          <div className="w-full">
-            <p className="text-[32px] text-stodirBackground font-semibold italic">
-              „Við horfum til framtíðar með festu – og fjárfestum þar sem við
-              sjáum raunverulegt virðisaukandi tækifæri.“
-            </p>
-            <p className="text-[14px] text-end text-stodirBackground font-semibold italic">
-              – Jón Sigurðsson, forstjóri Stoða
-            </p>
-          </div>
-          <div className="flex relative w-full h-[450px]">
-            <Image alt="ceo" objectFit="contain" fill src={"/jonColor.png"} />
-          </div>
-        </div>
-      </div>
-
-      <div className="flex-col gap-8 container flex px-[5%] py-[10%]">
+      <div className="flex-col gap-8 container flex px-[5%] py-[5%]">
         <p className="text-[32px] text-stodirPrimary font-semibold ">
           Fjárfestingar
         </p>
@@ -165,47 +135,12 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-        <Link href={paths.about}>
-          <p className="text-stodirPrimary text-end text-[16px] font-bold">
-            Sjá fjárfestingar →
-          </p>
-        </Link>
-      </div>
-
-      <div className="bg-stodirPrimary">
-        <div className="flex-col gap-8 container flex px-[5%] pt-[5%] pb-[16%]">
-          <div className="flex relative w-[150px] h-[100px]">
-            <Image
-              alt="footer-logo"
-              src={"/fullLogo.svg"}
-              fill
-              style={{ objectFit: "contain" }}
-            />
-          </div>
-          <div className="flex flex-row gap-40">
-            <div>
-              <p className="text-[18px] text-stodirBackground font-semibold">
-                Stoðir hf.
-              </p>
-              <p className="text-[18px] text-stodirBackground font-semibold">
-                Suðurgata 12
-              </p>
-              <p className="text-[18px] text-stodirBackground font-semibold">
-                101 Reykjavík
-              </p>
-            </div>
-            <div>
-              <p className="text-[18px] text-stodirBackground font-semibold">
-                info@stodir.is
-              </p>
-              <p className="text-[18px] text-stodirBackground font-semibold">
-                +354 591 4400
-              </p>
-              <p className="text-[18px] text-stodirBackground font-semibold">
-                Kt. 601273-0129
-              </p>
-            </div>
-          </div>
+        <div className="text-end pr-4">
+          <Link href={paths.investments}>
+            <p className="inline-block border-b text-stodirGrey border-stodirGrey text-[16px] font-bold">
+              Sjá fjárfestingar →
+            </p>
+          </Link>
         </div>
       </div>
     </div>

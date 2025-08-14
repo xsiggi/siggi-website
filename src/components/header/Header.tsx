@@ -36,7 +36,11 @@ export default function Header() {
       }`}
     >
       <div
-        className={`visible fixed inset-x-0 top-0 z-[100] bg-transparent opacity-100 transition-opacity duration-1000 ease-out`}
+        className={`visible fixed inset-x-0 top-0 z-[100] ${
+          pathname === "/"
+            ? "bg-transparent"
+            : "bg-stodirBackground border-b border-solid border-stodirPrimary"
+        } opacity-100 transition-opacity duration-1000 ease-out`}
         id="header"
       >
         <div className="container relative flex h-[100px] w-full flex-row items-center justify-between px-[20px] [@media(max-width:1000px)]:h-[85px] [@media(max-width:800px)]:items-center">
@@ -52,13 +56,19 @@ export default function Header() {
                   className="object-contain"
                   fill
                   priority
-                  src={"/fullLogo.svg"}
+                  src={pathname === "/" ? "/fullLogo.png" : "/fullLogoBlue.png"}
                 />
               </picture>
             </div>
           </Link>
           <nav className="z-[100] justify-between [@media(max-width:1200px)]:hidden">
-            <NavLinks />
+            <NavLinks
+              className={
+                pathname === "/"
+                  ? "text-stodirBackground"
+                  : "text-stodirPrimary"
+              }
+            />
           </nav>
           <div className="my-auto hidden items-center gap-4 [@media(max-width:1200px)]:flex">
             <div

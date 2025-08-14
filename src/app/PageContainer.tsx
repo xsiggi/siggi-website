@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import { PropsWithChildren } from "react";
 
@@ -9,6 +10,7 @@ export default function PageContainer({ children }: PropsWithChildren) {
 
         <main className="min-h-screen bg-grey">{children}</main>
       </div>
+      <Footer />
     </div>
   );
 }
