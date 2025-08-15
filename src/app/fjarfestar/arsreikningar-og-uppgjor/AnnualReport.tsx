@@ -78,7 +78,7 @@ export default function AnnualReport() {
   const currentYearData = data.find((y) => y.year === selectedYear);
 
   return (
-    <div className="relative h-screen">
+    <div className="relative min-h-screen">
       {/* Background image behind content */}
       <div className="absolute bottom-0 left-0 w-full h-[60%] pointer-events-none">
         <div className="absolute inset-0 bg-[url('/iceCave.png')] bg-cover bg-center opacity-20" />
