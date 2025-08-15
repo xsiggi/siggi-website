@@ -1,7 +1,7 @@
 import { paths } from "@/utils/paths";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { useCallback, useRef, useState } from "react";
+// import { useRouter } from "next/navigation";
+import { useRef, useState } from "react";
 import { useClickAway } from "react-use";
 
 interface Props {
@@ -9,29 +9,29 @@ interface Props {
 }
 
 export default function NavLinks({ className = "text-stodirPrimary" }: Props) {
-  const route = useRouter();
+  // const route = useRouter();
   const navLinksRef = useRef(null);
 
   const [, setShowDropDown] = useState<number | null>(null);
   const [isTeamOpen, setIsTeamOpen] = useState(false);
   const [isInvestingOpen, setIsInvestingOpen] = useState(false);
 
-  const handleNavLinkClick = useCallback(
-    (slug: string, index: number) => {
-      if (slug.length) {
-        setShowDropDown((current) => {
-          if (index === current) {
-            return null;
-          }
-          return index;
-        });
-      } else {
-        route.push(slug);
-        setShowDropDown(null);
-      }
-    },
-    [route]
-  );
+  // const handleNavLinkClick = useCallback(
+  //   (slug: string, index: number) => {
+  //     if (slug.length) {
+  //       setShowDropDown((current) => {
+  //         if (index === current) {
+  //           return null;
+  //         }
+  //         return index;
+  //       });
+  //     } else {
+  //       route.push(slug);
+  //       setShowDropDown(null);
+  //     }
+  //   },
+  //   [route]
+  // );
 
   useClickAway(
     navLinksRef,

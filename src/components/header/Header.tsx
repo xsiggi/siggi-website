@@ -6,7 +6,6 @@ import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 // import styles from "src/styles/ScrollStyles.module.css";
 import NavLinks from "./NavLinks";
-import path from "path";
 
 export default function Header() {
   const pathname = usePathname();
@@ -78,7 +77,7 @@ export default function Header() {
               {mobileView ? (
                 <div className="flex size-8 items-center justify-center">
                   {/* <Close /> */}
-                  'icon'
+                  icon
                 </div>
               ) : (
                 // <NavMenuIcon />

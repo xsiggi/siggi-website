@@ -1,6 +1,6 @@
 const baseUrl = "/";
 const baseTeamUrl = "/um-stodir/";
-const baseInvestingUrl = "/fjarfestingar/";
+const baseInvestingUrl = "/fjarfestar/";
 
 export const paths = {
   home: baseUrl,
@@ -12,7 +12,7 @@ export const paths = {
   investments: `${baseUrl}fjarfestingar`,
   annualReport: `${baseInvestingUrl}arsreikningar-og-uppgjor`,
   market: `${baseInvestingUrl}markadsupplysingar`,
-  notification: `${baseInvestingUrl}Kauphallartilkynningar`,
+  notification: `${baseInvestingUrl}kauphallartilkynningar`,
   calendar: `${baseInvestingUrl}fjarhagsdagatal`,
   shareholders: `${baseInvestingUrl}staerstu-hluthafar`,
   shareholderMeeting: `${baseInvestingUrl}hluthafafundir`,

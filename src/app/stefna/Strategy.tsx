@@ -1,7 +1,3 @@
-import { paths } from "@/utils/paths";
-import Image from "next/image";
-import Link from "next/link";
-
 export default function Strategy() {
   return (
     <div className="relative bg-[url('/ashGlacier.png')] bg-cover bg-center h-screen">

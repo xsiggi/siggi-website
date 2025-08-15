@@ -21,6 +21,7 @@ export default {
         stodirGrey: "#828282",
         stodirLightGrey: "#C3C3C3",
         stodirBackground: "#FAF9F7",
+        stodirSand: "#E9E4DD",
       },
     },
   },
